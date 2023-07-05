@@ -1,4 +1,9 @@
-from : fonction.operation import addition
+# fichier tests_fonctions.py
+import sys
+sys.path.append("..")
+
+from fonctions.operation import addition, soustraction, multiplication, division
+
 
 def test_addition():
     # Test d'addition de deux nombres positifs
@@ -12,8 +17,6 @@ def test_addition():
 
     print("Tous les tests d'addition ont réussi.")
 
-
-
 def test_soustraction():
     # Test de soustraction de deux nombres positifs
     assert soustraction(5, 2) == 3
@@ -25,9 +28,7 @@ def test_soustraction():
     assert soustraction(10, -7) == 17
 
     print("Tous les tests de soustraction ont réussi.")
-    
-    
-    
+
 def test_multiplication():
     # Test de multiplication de deux nombres positifs
     assert multiplication(2, 3) == 6
@@ -40,9 +41,9 @@ def test_multiplication():
 
     # Test de multiplication d'un nombre positif avec un nombre négatif
     assert multiplication(3, -4) == -12
-    
-    
-    
+
+    print("Tous les tests de multiplication ont réussi.")
+
 def test_division():
     # Test de division de deux nombres positifs
     assert division(10, 2) == 5
@@ -63,5 +64,5 @@ def test_division():
 
 test_addition()
 test_soustraction()
-test_soustraction()
+test_multiplication()
 test_division()
