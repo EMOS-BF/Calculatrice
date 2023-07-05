@@ -1,4 +1,8 @@
-from : fonction.operation import addition
+# fichier tests_fonctions.py
+import sys
+sys.path.append("..")
+
+from fonction.operation import addition, soustraction, multiplication, division
 
 def test_addition():
     # Test d'addition de deux nombres positifs

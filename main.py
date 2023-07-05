@@ -1,6 +1,8 @@
 from fonction.operation import *
 from fonction.check import *
 from fonction.checkOperation import *
+
+print("Calculatrice console: \n")
 q =1
 while q == 1:
     c = 1
