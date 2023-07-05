@@ -33,7 +33,7 @@ while q == 1:
     if operation == "+":
         print(addition(a,b))
     elif operation == "-":
-        print(soustration(a,b))
+        print(soustraction(a,b))
     elif operation == "*":
         print(multiplication(a,b))
     elif operation == "/":
