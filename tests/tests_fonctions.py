@@ -1,3 +1,5 @@
+from : fonction.operation import addition
+
 def test_addition():
     # Test d'addition de deux nombres positifs
     assert addition(2, 3) == 5
