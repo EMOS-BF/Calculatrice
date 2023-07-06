@@ -62,7 +62,3 @@ def test_division():
 
     print("Tous les tests de division ont réussi.")
 
-test_addition()
-test_soustraction()
-test_multiplication()
-test_division()

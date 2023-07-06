@@ -54,7 +54,7 @@ while q == 1:
         else:
             print("Résultat=",division(a,b))
     reponse = input("Voulez vous faire une autre operation\n entrez 'oui' ou 'non' comme reponse: \n")
-    resValable=0 # permet de voir si la réponse de l'utilisateur est variable
+    resValable=0 # permet de voir si la réponse de l'utilisateur est valable
     while resValable ==0:
         if reponse.lower() == "oui":
             q =1
