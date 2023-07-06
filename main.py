@@ -5,17 +5,6 @@ from fonction.checkOperation import *
 print("Calculatrice console: \n")
 q =1
 while q == 1:
-    c = 1
-    while (c == 1):
-        a = input("Entrer un le premier nombre: ")
-        print("")
-        b = input("Entrer le second nombre: ")
-        print("")
-        if check(a,b) == 0:
-            print("Entrer des nombres entiers SVP")
-            c = 1
-        else:
-            c = 0
 
     print("Nous avons toutes les operations de base\n")
     print("Pour addition entrer: + \n")
@@ -31,6 +20,19 @@ while q == 1:
             k = 1
         else :
             k = 0
+            
+    c = 1
+    while (c == 1):
+        a = input("Entrer un le premier nombre: ")
+        print("")
+        b = input("Entrer le second nombre: ")
+        print("")
+        if check(a,b) == 0:
+            print("Entrer des nombres entiers SVP")
+            c = 1
+        else:
+            c = 0
+
 
     if operation == "+":
         print(addition(a,b))
