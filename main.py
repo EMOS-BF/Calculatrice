@@ -20,7 +20,7 @@ while q == 1:
             k = 1
         else :
             k = 0
-            
+
     c = 1
     while (c == 1):
         a = input("Entrer un le premier nombre: ")
@@ -48,5 +48,7 @@ while q == 1:
     reponse = input("Voulez vous faire une autre operation\n entrer oui ou non comme reponse: \n")
     if reponse == "oui":
         q =1
-    else:
+    elif reponse == "non":
         q=0
+    else:
+        reponse = input("Veuillez repondre à la question par 'oui' ou 'non': \n")
