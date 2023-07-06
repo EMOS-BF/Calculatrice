@@ -1,9 +1,8 @@
-def check(a,b):
+def check(n):
     c = 1
     while (c == 1):
         try:
-           int(a) 
-           int(b)
-           return 1
+            (float(n))
+            return 1
         except:
             return 0

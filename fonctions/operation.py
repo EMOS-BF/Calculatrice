@@ -17,6 +17,6 @@ def division(a,b):
     a = float(a)
     b = float(b)
     if b != 0:
-        return a/(b)
+        return a/b
     else:
-        return "a"
+        return 0
