@@ -1,5 +1,5 @@
 def checkOperation(operation):
-    operations = ["+","-","*","/"]
+    operations = ["+","-","*","/","^"]
     if operation not in operations:
         return 0
     else:

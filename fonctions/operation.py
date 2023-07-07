@@ -20,3 +20,8 @@ def division(a,b):
         return a/b
     else:
         return 0
+    
+def power(a,n):
+    a = float(a)
+    n = float(n)
+    return pow(a,n)

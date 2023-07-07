@@ -6,22 +6,6 @@ from fonctions.sortie import sortie
 print("Calculatrice console: \n")
 q =1
 while q == 1:
-
-    print("Veuillez choisir une operation de base\n")
-    print("Pour addition (a+b) entrez: + \n")
-    print("Pour la soustration (a-b) entrez: -\n")
-    print("Pour la multiplication (a*b) entrez : *\n")
-    print("Pour la division (a/b) entrez: / \n")
-
-    k = 1
-    while k == 1:
-        operation = str(input("Entrez l'operation SVP: "))
-        if checkOperation(operation) == 0:
-            print("Veuillez Entrez une operation valide\n")
-            k = 1
-        else :
-            k = 0
-
     c = 1
     while (c == 1):
         a = input("Entrez un le premier nombre a: ")
@@ -41,6 +25,21 @@ while q == 1:
         else:
             c = 0
 
+    print("Veuillez choisir une operation de base\n")
+    print("Pour addition (a+b) entrez: + \n")
+    print("Pour la soustration (a-b) entrez: -\n")
+    print("Pour la multiplication (a*b) entrez : *\n")
+    print("Pour la division (a/b) entrez: / \n")
+    print("Pour la puissance (a^b) entrez: ^ \n")
+
+    k = 1
+    while k == 1:
+        operation = str(input("Entrez l'operation SVP: "))
+        if checkOperation(operation) == 0:
+            print("Veuillez Entrez une operation valide\n")
+            k = 1
+        else :
+            k = 0
 
     if operation == "+":
         print("Résultat=", addition(a,b))
@@ -53,6 +52,8 @@ while q == 1:
             print("Impossible de diviser par 0\n")
         else:
             print("Résultat=",division(a,b))
+    elif operation == "^":
+        print("Resultat:", power(a,b))
     reponse = input("Voulez vous faire une autre operation\n entrez 'oui' ou 'non' comme reponse: \n")
     resValable=0 # permet de voir si la réponse de l'utilisateur est valable
     while resValable ==0:
